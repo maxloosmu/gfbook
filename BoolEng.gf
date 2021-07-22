@@ -4,10 +4,10 @@ concrete BoolEng of Bool = {
     Boolean = {s : Quantum => Str} ;
   lin
     Pred boolean = "this is" ++ boolean ;
-    True = {s = table {Norm = "true" ;
-      Quant = "qutrue"}} ;
-    False = {s = table {Norm = "false" ;
-      Quant = "qufalse"}} ;
+    True = {s = table {Norm => "true" ;
+      Quant => "qutrue"}} ;
+    False = {s = table {Norm => "false" ;
+      Quant => "qufalse"}} ;
   param Quantum = Norm | Quant ;
 
 }
