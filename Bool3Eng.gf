@@ -7,10 +7,13 @@ concrete Bool3Eng of Bool3 = {
     Fa = {t = False} ;
     Conj bl1 bl2 = case bl1.t of {
       True => case bl2.t of {
-        True => bl1.t ++ "and" ++ bl2.t ++ "is true" ;
-        _ => bl1.t ++ "and" ++ bl2.t ++ "is false"
+        True => showBin bl1.t ++ "and" ++
+          showBin bl2.t ++ "is true" ;
+        _ => showBin bl1.t ++ "and" ++
+          showBin bl2.t ++ "is false"
       } ;
-      _ => bl1.t ++ "and" ++ bl2.t ++ "is false"
+      _ => showBin bl1.t ++ "and" ++
+        showBin bl2.t ++ "is false"
     } ;
     Disj bl1 bl2 = case bl1.t of {
       False => case bl2.t of {
@@ -20,4 +23,10 @@ concrete Bool3Eng of Bool3 = {
       _ => "this is true"
     } ;
   param Binary = True | False ;
+  oper
+    showBin : Binary -> Str =
+      \b -> case b of {
+        True => "true" ;
+        False => "false"
+      } ;
 }

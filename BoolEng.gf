@@ -10,5 +10,4 @@ concrete BoolEng of Bool = {
     False = {s = table {Norm => "false" ;
       Quant => "qufalse"}} ;
   param Quantum = Norm | Quant ;
-
 }

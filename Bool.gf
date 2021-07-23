@@ -5,5 +5,4 @@ abstract Bool = {
   fun
     Pred : Boolean -> Sentence ;
     True, False : Boolean ;
-
 }
