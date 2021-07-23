@@ -3,6 +3,7 @@ abstract Bool3 = {
   cat
     Sentence ; BinLogic ;
   fun
+    Tr, Fa : BinLogic ;
     Conj, Disj :
       BinLogic -> BinLogic -> Sentence ;
 }
