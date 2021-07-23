@@ -3,10 +3,6 @@ abstract Bool2 = {
   cat
     Sentence ; Boolean ;
   fun
-    Pred : Boolean -> Sentence ;
-    PredT, PredF : Boolean -> Sentence ;
+    PredQ, PredN : Boolean -> Sentence ;
     True, False : Boolean ;
-    Conj, Disj :
-      Boolean -> Boolean -> Boolean ;
-
 }
