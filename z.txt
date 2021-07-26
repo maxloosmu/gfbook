@@ -3,3 +3,11 @@ gt -tr -depth=5 | l
 import gfbook\MeFra.gf
 gt -depth=2 | l
 gt -depth=2 | l -all
+
+
+
+----------------------
+
+\\wsl$\Ubuntu-20.04
+cd ~/gf_lib_path/gfbook
+

@@ -4,5 +4,5 @@ abstract Bool1 = {
     Sentence ; Bools ;
   fun
     Pred : Bools -> Sentence ;
-    ConjTr, ConjFa : Bools ;
+    ConjTr : Bools ;
 }
